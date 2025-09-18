@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 
 namespace lib_dominio.Entidades
 {
-    public class Empleado
+    public class Sucursales
     {
         public int Id { get; set; }
         public string? Nombre { get; set; }
-        public string? Cargo { get; set; }
-        public int Sucursal { get; set; }
 
-        [ForeignKey("Sucursal")] public Sucursales? _Sucursal { get; set; }
+        
+        public int Ciudad { get; set; }
+
+        [ForeignKey("Ciudad")] public Ciudades? _Ciudad { get; set; }
+        
     }
 }

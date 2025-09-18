@@ -7,13 +7,16 @@ using System.Threading.Tasks;
 
 namespace lib_dominio.Entidades
 {
-    public class Empleado
+    public class Instrumentos
     {
         public int Id { get; set; }
         public string? Nombre { get; set; }
-        public string? Cargo { get; set; }
-        public int Sucursal { get; set; }
+        public string? Marca { get; set; }
+        public string? Modelo { get; set; }
+        public decimal Precio { get; set; }
+        public int Categoria { get; set; }
 
-        [ForeignKey("Sucursal")] public Sucursales? _Sucursal { get; set; }
+        [ForeignKey("Categoria")] public Categorias? _Categoria { get; set; }
+
     }
 }

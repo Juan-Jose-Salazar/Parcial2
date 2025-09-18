@@ -8,8 +8,8 @@ namespace lib_dominio.Entidades
 {
     public class Admin
     {
-        public int Id { get; set; }
-        public long Documento { get; set; }
-        public string Nombre { get; set; }
+        public long Id { get; set; }
+        public int Documento { get; set; }
+        public string? Nombre { get; set; }
     }
 }

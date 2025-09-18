@@ -19,20 +19,20 @@ namespace lib_repositorios.Implementaciones
             optionsBuilder.UseSqlServer(this.StringConexion!, p => { });
             optionsBuilder.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
         }
-        public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<Admin> Admins { get; set; }
-        public DbSet<Lutier> Lutiers { get; set; }
-        public DbSet<Ciudad> Ciudades { get; set; }
-        public DbSet<Sucursal> Sucursales { get; set; }
-        public DbSet<Asesor> Asesores { get; set; }
-        public DbSet<Factura> Facturas { get; set; }
-        public DbSet<Empleado> Empleados { get; set; }
-        public DbSet<Categoria> Categorias { get; set; }
-        public DbSet<Instrumento> Instrumentos { get; set; }
-        public DbSet<Accesorio> Accesorios { get; set; }
-        public DbSet<Instrumento_Accesorio> Instrumentos_Accesorios { get; set; }
-        public DbSet<Instrumento_Factura> Instrumentos_Facturas { get; set; }
-        public DbSet<Cliente_Instrumento> Clientes_Instrumentos { get; set; }
+        public DbSet<Clientes> Clientes { get; set; }
+        public DbSet<Admin> Admin { get; set; }
+        public DbSet<Lutiers> Lutiers { get; set; }
+        public DbSet<Ciudades> Ciudades { get; set; }
+        public DbSet<Sucursales> Sucursales { get; set; }
+        public DbSet<Asesores> Asesores { get; set; }
+        public DbSet<Facturas> Facturas { get; set; }
+        public DbSet<Empleado> Empleado { get; set; }
+        public DbSet<Categorias> Categorias { get; set; }
+        public DbSet<Instrumentos> Instrumentos { get; set; }
+        public DbSet<Accesorios> Accesorios { get; set; }
+        public DbSet<Instrumentos_Accesorios> Instrumentos_Accesorios { get; set; }
+        public DbSet<Instrumentos_Facturas> Instrumentos_Facturas { get; set; }
+        public DbSet<Clientes_Instrumentos> Clientes_Instrumentos { get; set; }
 
 
     }

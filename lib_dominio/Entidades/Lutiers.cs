@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace lib_dominio.Entidades
 {
-    public class Lutier
+    public class Lutiers
     {
         public long Id { get; set; }
         public int Documento { get; set; }
-        public string Nombre { get; set; }
-        public string Especialidad { get; set; }
+        public string? Nombre { get; set; }
+        public string? Especialidad { get; set; }
     }
 }
